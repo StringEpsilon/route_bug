@@ -1,0 +1,6 @@
+﻿@model string
+@using route_bug.Controllers
+
+<a href="@(this.Url.Action("Do", new { templateId = this.Model, mode = Mode.Bar }))">
+	Do with mode
+</a>
